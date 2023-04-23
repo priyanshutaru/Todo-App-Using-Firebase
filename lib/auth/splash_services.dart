@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:authwithmobile/auth/register_screen.dart';
 import 'package:authwithmobile/screen/firebase_screens/home_screen.dart';
 import 'package:authwithmobile/screen/firestore_screens/home.dart';
+import 'package:authwithmobile/screen/upload_screens/uploadimage_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class SplachServices {
         () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => FirestoreHomeScreen(),
+              builder: (context) => UploadImageScreen(),
             )),
       );
     } else {
