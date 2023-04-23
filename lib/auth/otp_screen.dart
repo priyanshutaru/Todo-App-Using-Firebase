@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:authwithmobile/constant/constant.dart';
-import 'package:authwithmobile/screens/home_screen.dart';
+import 'package:authwithmobile/screen/firebase_screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';

@@ -1,8 +1,8 @@
 import 'dart:async';
 
-
 import 'package:authwithmobile/auth/register_screen.dart';
-import 'package:authwithmobile/screens/home_screen.dart';
+import 'package:authwithmobile/screen/firebase_screens/home_screen.dart';
+import 'package:authwithmobile/screen/firestore_screens/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +18,11 @@ class SplachServices {
         () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => HomeScreen(),
+              builder: (context) => FirestoreHomeScreen(),
             )),
       );
     } else {
-     Timer(
+      Timer(
         // ignore: prefer_const_constructors
         Duration(seconds: 5),
         () => Navigator.push(
